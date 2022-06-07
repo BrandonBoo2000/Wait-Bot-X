@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+.PHONY : kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_py: kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_py
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_py/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
+.PHONY : gazebo_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+.PHONY : kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+gazebo_msgs_generate_messages_eus: kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+
+.PHONY : gazebo_msgs_generate_messages_eus
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_eus/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
+.PHONY : gazebo_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_kobuki.dir/rule:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_kobuki.dir/rule
 .PHONY : kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_kobuki.dir/rule
@@ -183,34 +213,19 @@ gazebo_ros_kobuki/fast:
 .PHONY : gazebo_ros_kobuki/fast
 
 # Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/rule
+.PHONY : kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_py: kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+gazebo_ros_gencfg: kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/rule
 
-.PHONY : nav_msgs_generate_messages_py
+.PHONY : gazebo_ros_gencfg
 
 # fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_py: kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_py
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_py/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
-.PHONY : gazebo_msgs_generate_messages_py/fast
+gazebo_ros_gencfg/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/build.make kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/build
+.PHONY : gazebo_ros_gencfg/fast
 
 # Convenience name for target.
 kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule:
@@ -241,111 +256,6 @@ gazebo_msgs_generate_messages_nodejs: kobuki_gazebo_plugins/CMakeFiles/gazebo_ms
 gazebo_msgs_generate_messages_nodejs/fast:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
 .PHONY : gazebo_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_lisp: kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_lisp
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_lisp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
-.PHONY : trajectory_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_eus: kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_eus
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_eus/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make kobuki_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
-.PHONY : gazebo_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_py: kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_py
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_py/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
-.PHONY : trajectory_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_cpp: kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_cpp
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_cpp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
-.PHONY : trajectory_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/rule
-
-# Convenience name for target.
-gazebo_ros_gencfg: kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/rule
-
-.PHONY : gazebo_ros_gencfg
-
-# fast build rule for target.
-gazebo_ros_gencfg/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/build.make kobuki_gazebo_plugins/CMakeFiles/gazebo_ros_gencfg.dir/build
-.PHONY : gazebo_ros_gencfg/fast
-
-# Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_eus: kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_eus
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_eus/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
-.PHONY : trajectory_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-trajectory_msgs_generate_messages_nodejs: kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : trajectory_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_nodejs/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make kobuki_gazebo_plugins/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
-.PHONY : trajectory_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 kobuki_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule:
@@ -408,21 +318,6 @@ nav_msgs_generate_messages_cpp/fast:
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
 kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 .PHONY : kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
@@ -436,6 +331,36 @@ nav_msgs_generate_messages_nodejs: kobuki_gazebo_plugins/CMakeFiles/nav_msgs_gen
 nav_msgs_generate_messages_nodejs/fast:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_py: kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_lisp: kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
 
 src/gazebo_ros_kobuki.o: src/gazebo_ros_kobuki.cpp.o
 
@@ -528,27 +453,22 @@ help:
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... gazebo_ros_kobuki"
-	@echo "... nav_msgs_generate_messages_py"
 	@echo "... gazebo_msgs_generate_messages_py"
+	@echo "... gazebo_msgs_generate_messages_eus"
+	@echo "... gazebo_ros_kobuki"
+	@echo "... gazebo_ros_gencfg"
 	@echo "... gazebo_msgs_generate_messages_lisp"
 	@echo "... gazebo_msgs_generate_messages_nodejs"
-	@echo "... trajectory_msgs_generate_messages_lisp"
-	@echo "... gazebo_msgs_generate_messages_eus"
-	@echo "... trajectory_msgs_generate_messages_py"
-	@echo "... trajectory_msgs_generate_messages_cpp"
-	@echo "... gazebo_ros_gencfg"
-	@echo "... trajectory_msgs_generate_messages_eus"
-	@echo "... trajectory_msgs_generate_messages_nodejs"
+	@echo "... rebuild_cache"
 	@echo "... gazebo_plugins_gencfg"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... gazebo_msgs_generate_messages_cpp"
 	@echo "... nav_msgs_generate_messages_cpp"
-	@echo "... edit_cache"
-	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... nav_msgs_generate_messages_py"
+	@echo "... test"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... edit_cache"
 	@echo "... src/gazebo_ros_kobuki.o"
 	@echo "... src/gazebo_ros_kobuki.i"
 	@echo "... src/gazebo_ros_kobuki.s"

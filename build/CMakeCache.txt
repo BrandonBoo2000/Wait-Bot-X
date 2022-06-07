@@ -778,6 +778,9 @@ class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
 //The directory containing a CMake configuration file for cmake_modules.
 cmake_modules_DIR:PATH=/opt/ros/melodic/share/cmake_modules/cmake
 
+//The directory containing a CMake configuration file for control_msgs.
+control_msgs_DIR:PATH=/opt/ros/melodic/share/control_msgs/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
@@ -795,6 +798,45 @@ diagnostic_updater_DIR:PATH=/opt/ros/melodic/share/diagnostic_updater/cmake
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
+
+//Value Computed by CMake
+dynamixel_controllers_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/dynamixel_motor/dynamixel_controllers
+
+//The directory containing a CMake configuration file for dynamixel_controllers.
+dynamixel_controllers_DIR:PATH=/home/bboo/Wait-Bot-X/devel/share/dynamixel_controllers/cmake
+
+//Value Computed by CMake
+dynamixel_controllers_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/dynamixel_motor/dynamixel_controllers
+
+//Value Computed by CMake
+dynamixel_driver_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/dynamixel_motor/dynamixel_driver
+
+//The directory containing a CMake configuration file for dynamixel_driver.
+dynamixel_driver_DIR:PATH=/home/bboo/Wait-Bot-X/devel/share/dynamixel_driver/cmake
+
+//Value Computed by CMake
+dynamixel_driver_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/dynamixel_motor/dynamixel_driver
+
+//Value Computed by CMake
+dynamixel_motor_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/dynamixel_motor/dynamixel_motor
+
+//Value Computed by CMake
+dynamixel_motor_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/dynamixel_motor/dynamixel_motor
+
+//Value Computed by CMake
+dynamixel_msgs_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/dynamixel_motor/dynamixel_msgs
+
+//The directory containing a CMake configuration file for dynamixel_msgs.
+dynamixel_msgs_DIR:PATH=/home/bboo/Wait-Bot-X/devel/share/dynamixel_msgs/cmake
+
+//Value Computed by CMake
+dynamixel_msgs_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/dynamixel_motor/dynamixel_msgs
+
+//Value Computed by CMake
+dynamixel_tutorials_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/dynamixel_motor/dynamixel_tutorials
+
+//Value Computed by CMake
+dynamixel_tutorials_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/dynamixel_motor/dynamixel_tutorials
 
 //The directory containing a CMake configuration file for ecl_build.
 ecl_build_DIR:PATH=/opt/ros/melodic/share/ecl_build/cmake
@@ -1076,6 +1118,42 @@ onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libsdformat.so
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
+//Value Computed by CMake
+rchomeedu_arm_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/rc-home-edu-learn-ros/rchomeedu_arm
+
+//Value Computed by CMake
+rchomeedu_arm_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/rc-home-edu-learn-ros/rchomeedu_arm
+
+//Value Computed by CMake
+rchomeedu_follower_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/rc-home-edu-learn-ros/rchomeedu_apps/rchomeedu_follower
+
+//Value Computed by CMake
+rchomeedu_follower_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/rc-home-edu-learn-ros/rchomeedu_apps/rchomeedu_follower
+
+//Value Computed by CMake
+rchomeedu_navigation_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/rc-home-edu-learn-ros/rchomeedu_navigation
+
+//Value Computed by CMake
+rchomeedu_navigation_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/rc-home-edu-learn-ros/rchomeedu_navigation
+
+//Value Computed by CMake
+rchomeedu_partybot_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/rc-home-edu-learn-ros/rchomeedu_apps/rchomeedu_partybot
+
+//Value Computed by CMake
+rchomeedu_partybot_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/rc-home-edu-learn-ros/rchomeedu_apps/rchomeedu_partybot
+
+//Value Computed by CMake
+rchomeedu_speech_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/rc-home-edu-learn-ros/rchomeedu_speech
+
+//Value Computed by CMake
+rchomeedu_speech_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/rc-home-edu-learn-ros/rchomeedu_speech
+
+//Value Computed by CMake
+rchomeedu_vision_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/rc-home-edu-learn-ros/rchomeedu_vision
+
+//Value Computed by CMake
+rchomeedu_vision_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/rc-home-edu-learn-ros/rchomeedu_vision
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
 
@@ -1114,6 +1192,12 @@ sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for smclib.
 smclib_DIR:PATH=/opt/ros/melodic/share/smclib/cmake
+
+//Value Computed by CMake
+sound_play_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/rc-home-edu-learn-matlab/Speech/customMsg/sound_play
+
+//Value Computed by CMake
+sound_play_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/rc-home-edu-learn-matlab/Speech/customMsg/sound_play
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -1156,6 +1240,12 @@ turtlebot_apps_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/turtlebot_apps/turt
 
 //Value Computed by CMake
 turtlebot_apps_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/turtlebot_apps/turtlebot_apps
+
+//Value Computed by CMake
+turtlebot_arm_description_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/rc-home-edu-learn-matlab/Manipulation/turtlebot_arm_description
+
+//Value Computed by CMake
+turtlebot_arm_description_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/rc-home-edu-learn-matlab/Manipulation/turtlebot_arm_description
 
 //Value Computed by CMake
 turtlebot_bringup_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/turtlebot/turtlebot_bringup
@@ -1595,7 +1685,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=33
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=44
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -2267,7 +2357,7 @@ __pkg_config_checked_YAML:INTERNAL=1
 __pkg_config_checked_ZIP:INTERNAL=1
 __pkg_config_checked_ZeroMQ:INTERNAL=1
 __pkg_config_checked_yaml-cpp:INTERNAL=1
-prefix_result:INTERNAL=
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 yaml-cpp_CFLAGS:INTERNAL=
 yaml-cpp_CFLAGS_I:INTERNAL=
 yaml-cpp_CFLAGS_OTHER:INTERNAL=

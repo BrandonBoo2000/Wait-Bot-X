@@ -112,17 +112,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -134,6 +123,17 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -213,64 +213,34 @@ kobuki_msgs_genlisp/fast:
 .PHONY : kobuki_msgs_genlisp/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/rule
+kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/rule
 
 # Convenience name for target.
-kobuki_msgs_geneus: kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/rule
+kobuki_msgs_generate_messages: kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/rule
 
-.PHONY : kobuki_msgs_geneus
+.PHONY : kobuki_msgs_generate_messages
 
 # fast build rule for target.
-kobuki_msgs_geneus/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/build
-.PHONY : kobuki_msgs_geneus/fast
+kobuki_msgs_generate_messages/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/build
+.PHONY : kobuki_msgs_generate_messages/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/rule
+kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/rule
 
 # Convenience name for target.
-kobuki_msgs_generate_messages_eus: kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/rule
+_kobuki_msgs_generate_messages_check_deps_CliffEvent: kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/rule
 
-.PHONY : kobuki_msgs_generate_messages_eus
+.PHONY : _kobuki_msgs_generate_messages_check_deps_CliffEvent
 
 # fast build rule for target.
-kobuki_msgs_generate_messages_eus/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/build
-.PHONY : kobuki_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/rule
-
-# Convenience name for target.
-kobuki_msgs_gencpp: kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/rule
-
-.PHONY : kobuki_msgs_gencpp
-
-# fast build rule for target.
-kobuki_msgs_gencpp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/build
-.PHONY : kobuki_msgs_gencpp/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-kobuki_msgs_generate_messages_cpp: kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : kobuki_msgs_generate_messages_cpp
-
-# fast build rule for target.
-kobuki_msgs_generate_messages_cpp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/build
-.PHONY : kobuki_msgs_generate_messages_cpp/fast
+_kobuki_msgs_generate_messages_check_deps_CliffEvent/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/build
+.PHONY : _kobuki_msgs_generate_messages_check_deps_CliffEvent/fast
 
 # Convenience name for target.
 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingGoal.dir/rule:
@@ -286,6 +256,21 @@ _kobuki_msgs_generate_messages_check_deps_AutoDockingGoal: kobuki_msgs/CMakeFile
 _kobuki_msgs_generate_messages_check_deps_AutoDockingGoal/fast:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingGoal.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingGoal.dir/build
 .PHONY : _kobuki_msgs_generate_messages_check_deps_AutoDockingGoal/fast
+
+# Convenience name for target.
+kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+kobuki_msgs_generate_messages_cpp: kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : kobuki_msgs_generate_messages_cpp
+
+# fast build rule for target.
+kobuki_msgs_generate_messages_cpp/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_cpp.dir/build
+.PHONY : kobuki_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_BumperEvent.dir/rule:
@@ -318,109 +303,34 @@ _kobuki_msgs_generate_messages_check_deps_DockInfraRed/fast:
 .PHONY : _kobuki_msgs_generate_messages_check_deps_DockInfraRed/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/rule
+kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/rule
 
 # Convenience name for target.
-kobuki_msgs_generate_messages: kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/rule
+_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal: kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/rule
 
-.PHONY : kobuki_msgs_generate_messages
+.PHONY : _kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal
 
 # fast build rule for target.
-kobuki_msgs_generate_messages/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages.dir/build
-.PHONY : kobuki_msgs_generate_messages/fast
+_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/build
+.PHONY : _kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_py: kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+kobuki_msgs_geneus: kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/rule
 
-.PHONY : actionlib_msgs_generate_messages_py
+.PHONY : kobuki_msgs_geneus
 
 # fast build rule for target.
-actionlib_msgs_generate_messages_py/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-.PHONY : actionlib_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_nodejs: kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_nodejs/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
-.PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-kobuki_msgs_generate_messages_lisp: kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : kobuki_msgs_generate_messages_lisp
-
-# fast build rule for target.
-kobuki_msgs_generate_messages_lisp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/build
-.PHONY : kobuki_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: kobuki_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make kobuki_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/rule
-
-# Convenience name for target.
-kobuki_msgs_gennodejs: kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/rule
-
-.PHONY : kobuki_msgs_gennodejs
-
-# fast build rule for target.
-kobuki_msgs_gennodejs/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/build
-.PHONY : kobuki_msgs_gennodejs/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_lisp: kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
+kobuki_msgs_geneus/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_geneus.dir/build
+.PHONY : kobuki_msgs_geneus/fast
 
 # Convenience name for target.
 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_DigitalOutput.dir/rule:
@@ -483,79 +393,64 @@ _kobuki_msgs_generate_messages_check_deps_ControllerInfo/fast:
 .PHONY : _kobuki_msgs_generate_messages_check_deps_ControllerInfo/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: kobuki_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+kobuki_msgs_gennodejs: kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/rule
 
-.PHONY : std_msgs_generate_messages_lisp
+.PHONY : kobuki_msgs_gennodejs
 
 # fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make kobuki_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
+kobuki_msgs_gennodejs/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_gennodejs.dir/build
+.PHONY : kobuki_msgs_gennodejs/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/rule
+kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-_kobuki_msgs_generate_messages_check_deps_WheelDropEvent: kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/rule
+actionlib_msgs_generate_messages_lisp: kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : _kobuki_msgs_generate_messages_check_deps_WheelDropEvent
+.PHONY : actionlib_msgs_generate_messages_lisp
 
 # fast build rule for target.
-_kobuki_msgs_generate_messages_check_deps_WheelDropEvent/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/build
-.PHONY : _kobuki_msgs_generate_messages_check_deps_WheelDropEvent/fast
+actionlib_msgs_generate_messages_lisp/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/rule
+kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/rule
 
 # Convenience name for target.
-_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal: kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/rule
+_kobuki_msgs_generate_messages_check_deps_RobotStateEvent: kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/rule
 
-.PHONY : _kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal
+.PHONY : _kobuki_msgs_generate_messages_check_deps_RobotStateEvent
 
 # fast build rule for target.
-_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal.dir/build
-.PHONY : _kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal/fast
+_kobuki_msgs_generate_messages_check_deps_RobotStateEvent/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/build
+.PHONY : _kobuki_msgs_generate_messages_check_deps_RobotStateEvent/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: kobuki_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+actionlib_msgs_generate_messages_nodejs: kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : actionlib_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make kobuki_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/rule
-
-# Convenience name for target.
-_kobuki_msgs_generate_messages_check_deps_CliffEvent: kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/rule
-
-.PHONY : _kobuki_msgs_generate_messages_check_deps_CliffEvent
-
-# fast build rule for target.
-_kobuki_msgs_generate_messages_check_deps_CliffEvent/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_CliffEvent.dir/build
-.PHONY : _kobuki_msgs_generate_messages_check_deps_CliffEvent/fast
+actionlib_msgs_generate_messages_nodejs/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_py.dir/rule:
@@ -588,19 +483,19 @@ _kobuki_msgs_generate_messages_check_deps_ExternalPower/fast:
 .PHONY : _kobuki_msgs_generate_messages_check_deps_ExternalPower/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/rule
+kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-_kobuki_msgs_generate_messages_check_deps_RobotStateEvent: kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/rule
+actionlib_msgs_generate_messages_py: kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 
-.PHONY : _kobuki_msgs_generate_messages_check_deps_RobotStateEvent
+.PHONY : actionlib_msgs_generate_messages_py
 
 # fast build rule for target.
-_kobuki_msgs_generate_messages_check_deps_RobotStateEvent/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_RobotStateEvent.dir/build
-.PHONY : _kobuki_msgs_generate_messages_check_deps_RobotStateEvent/fast
+actionlib_msgs_generate_messages_py/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make kobuki_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_ButtonEvent.dir/rule:
@@ -633,21 +528,6 @@ _kobuki_msgs_generate_messages_check_deps_AutoDockingActionFeedback/fast:
 .PHONY : _kobuki_msgs_generate_messages_check_deps_AutoDockingActionFeedback/fast
 
 # Convenience name for target.
-kobuki_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: kobuki_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make kobuki_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingFeedback.dir/rule:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingFeedback.dir/rule
 .PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingFeedback.dir/rule
@@ -676,21 +556,6 @@ _kobuki_msgs_generate_messages_check_deps_AutoDockingAction: kobuki_msgs/CMakeFi
 _kobuki_msgs_generate_messages_check_deps_AutoDockingAction/fast:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingAction.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingAction.dir/build
 .PHONY : _kobuki_msgs_generate_messages_check_deps_AutoDockingAction/fast
-
-# Convenience name for target.
-kobuki_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : kobuki_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: kobuki_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make kobuki_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_KeyboardInput.dir/rule:
@@ -766,6 +631,21 @@ _kobuki_msgs_generate_messages_check_deps_MotorPower: kobuki_msgs/CMakeFiles/_ko
 _kobuki_msgs_generate_messages_check_deps_MotorPower/fast:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_MotorPower.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_MotorPower.dir/build
 .PHONY : _kobuki_msgs_generate_messages_check_deps_MotorPower/fast
+
+# Convenience name for target.
+kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/rule
+
+# Convenience name for target.
+_kobuki_msgs_generate_messages_check_deps_WheelDropEvent: kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/rule
+
+.PHONY : _kobuki_msgs_generate_messages_check_deps_WheelDropEvent
+
+# fast build rule for target.
+_kobuki_msgs_generate_messages_check_deps_WheelDropEvent/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_WheelDropEvent.dir/build
+.PHONY : _kobuki_msgs_generate_messages_check_deps_WheelDropEvent/fast
 
 # Convenience name for target.
 kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_SensorState.dir/rule:
@@ -857,6 +737,51 @@ _kobuki_msgs_generate_messages_check_deps_AutoDockingActionResult/fast:
 	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionResult.dir/build.make kobuki_msgs/CMakeFiles/_kobuki_msgs_generate_messages_check_deps_AutoDockingActionResult.dir/build
 .PHONY : _kobuki_msgs_generate_messages_check_deps_AutoDockingActionResult/fast
 
+# Convenience name for target.
+kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/rule
+
+# Convenience name for target.
+kobuki_msgs_gencpp: kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/rule
+
+.PHONY : kobuki_msgs_gencpp
+
+# fast build rule for target.
+kobuki_msgs_gencpp/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_gencpp.dir/build
+.PHONY : kobuki_msgs_gencpp/fast
+
+# Convenience name for target.
+kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+kobuki_msgs_generate_messages_eus: kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/rule
+
+.PHONY : kobuki_msgs_generate_messages_eus
+
+# fast build rule for target.
+kobuki_msgs_generate_messages_eus/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_eus.dir/build
+.PHONY : kobuki_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f CMakeFiles/Makefile2 kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/rule
+.PHONY : kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+kobuki_msgs_generate_messages_lisp: kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : kobuki_msgs_generate_messages_lisp
+
+# fast build rule for target.
+kobuki_msgs_generate_messages_lisp/fast:
+	cd /home/bboo/Wait-Bot-X/build && $(MAKE) -f kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/build.make kobuki_msgs/CMakeFiles/kobuki_msgs_generate_messages_lisp.dir/build
+.PHONY : kobuki_msgs_generate_messages_lisp/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -870,52 +795,47 @@ help:
 	@echo "... kobuki_msgs_genpy"
 	@echo "... kobuki_msgs_generate_messages_nodejs"
 	@echo "... kobuki_msgs_genlisp"
-	@echo "... edit_cache"
-	@echo "... kobuki_msgs_geneus"
-	@echo "... kobuki_msgs_generate_messages_eus"
-	@echo "... kobuki_msgs_gencpp"
-	@echo "... kobuki_msgs_generate_messages_cpp"
+	@echo "... kobuki_msgs_generate_messages"
+	@echo "... _kobuki_msgs_generate_messages_check_deps_CliffEvent"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_AutoDockingGoal"
+	@echo "... kobuki_msgs_generate_messages_cpp"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_BumperEvent"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_DockInfraRed"
-	@echo "... kobuki_msgs_generate_messages"
-	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... kobuki_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... kobuki_msgs_gennodejs"
-	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... _kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal"
+	@echo "... edit_cache"
+	@echo "... kobuki_msgs_geneus"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_DigitalOutput"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_DigitalInputEvent"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_ControllerInfo"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... test"
-	@echo "... _kobuki_msgs_generate_messages_check_deps_WheelDropEvent"
-	@echo "... _kobuki_msgs_generate_messages_check_deps_AutoDockingActionGoal"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... _kobuki_msgs_generate_messages_check_deps_CliffEvent"
+	@echo "... kobuki_msgs_gennodejs"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... _kobuki_msgs_generate_messages_check_deps_RobotStateEvent"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... kobuki_msgs_generate_messages_py"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_ExternalPower"
-	@echo "... _kobuki_msgs_generate_messages_check_deps_RobotStateEvent"
+	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_ButtonEvent"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_AutoDockingActionFeedback"
-	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_AutoDockingFeedback"
 	@echo "... install"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_AutoDockingAction"
-	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_KeyboardInput"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_AutoDockingResult"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_Led"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_MotorPower"
+	@echo "... test"
+	@echo "... _kobuki_msgs_generate_messages_check_deps_WheelDropEvent"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_SensorState"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_PowerSystemEvent"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_ScanAngle"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_Sound"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_VersionInfo"
 	@echo "... _kobuki_msgs_generate_messages_check_deps_AutoDockingActionResult"
+	@echo "... kobuki_msgs_gencpp"
+	@echo "... kobuki_msgs_generate_messages_eus"
+	@echo "... kobuki_msgs_generate_messages_lisp"
 .PHONY : help
 
 
