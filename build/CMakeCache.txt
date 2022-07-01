@@ -1358,6 +1358,12 @@ urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
 
+//Value Computed by CMake
+wait_bot_x_BINARY_DIR:STATIC=/home/bboo/Wait-Bot-X/build/wait_bot_x
+
+//Value Computed by CMake
+wait_bot_x_SOURCE_DIR:STATIC=/home/bboo/Wait-Bot-X/src/wait_bot_x
+
 //The directory containing a CMake configuration file for xacro.
 xacro_DIR:PATH=/opt/ros/melodic/share/xacro/cmake
 
@@ -1706,7 +1712,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=45
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=46
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

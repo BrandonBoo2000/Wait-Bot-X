@@ -1,0 +1,8 @@
+prefix=/home/bboo/Wait-Bot-X/install
+
+Name: wait_bot_x
+Description: Description of wait_bot_x
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

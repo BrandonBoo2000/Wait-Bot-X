@@ -535,6 +535,13 @@
 /home/bboo/Wait-Bot-X/build/kobuki_gazebo_plugins/CMakeFiles/test.dir
 /home/bboo/Wait-Bot-X/build/kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir
 /home/bboo/Wait-Bot-X/build/kobuki_gazebo_plugins/CMakeFiles/edit_cache.dir
+/home/bboo/Wait-Bot-X/build/wait_bot_x/CMakeFiles/install/strip.dir
+/home/bboo/Wait-Bot-X/build/wait_bot_x/CMakeFiles/edit_cache.dir
+/home/bboo/Wait-Bot-X/build/wait_bot_x/CMakeFiles/list_install_components.dir
+/home/bboo/Wait-Bot-X/build/wait_bot_x/CMakeFiles/test.dir
+/home/bboo/Wait-Bot-X/build/wait_bot_x/CMakeFiles/install/local.dir
+/home/bboo/Wait-Bot-X/build/wait_bot_x/CMakeFiles/rebuild_cache.dir
+/home/bboo/Wait-Bot-X/build/wait_bot_x/CMakeFiles/install.dir
 /home/bboo/Wait-Bot-X/build/kobuki_description/CMakeFiles/install/strip.dir
 /home/bboo/Wait-Bot-X/build/kobuki_description/CMakeFiles/install/local.dir
 /home/bboo/Wait-Bot-X/build/kobuki_description/CMakeFiles/test.dir

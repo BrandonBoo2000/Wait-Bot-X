@@ -10903,6 +10903,24 @@ clean: kobuki_gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clea
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory wait_bot_x
+
+# Convenience name for "all" pass in the directory.
+wait_bot_x/all:
+
+.PHONY : wait_bot_x/all
+
+# Convenience name for "clean" pass in the directory.
+wait_bot_x/clean:
+
+.PHONY : wait_bot_x/clean
+
+# Convenience name for "preinstall" pass in the directory.
+wait_bot_x/preinstall:
+
+.PHONY : wait_bot_x/preinstall
+
+#=============================================================================
 # Directory level rules for directory kobuki_description
 
 # Convenience name for "all" pass in the directory.
