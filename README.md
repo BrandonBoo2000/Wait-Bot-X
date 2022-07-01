@@ -1,7 +1,7 @@
-## Wait-Bot-X
+# Wait-Bot-X
 Group Project for WID3005 Intelligent Robotic
 
-# Ordering System
+## Ordering System
 This part is an interaction between Wait-Bot-X with customer
 First, to initiate the ordering system, you should open terminal and run the *roscore*
 ```
